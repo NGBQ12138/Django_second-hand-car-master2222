@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    {% load static %}
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/header.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/footer.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/protection.css' %}"/>
+</head>
+<body>
+    <div id="header" class="container"></div>
+    <div id="main" style="padding-bottom:100px;" class="container">
+        <div class="contain">
+            <h2>服务保障</h2>
+            <br/>
+            <h4>
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;There used to be a story teller,who always painted the sunshine and the rain.</span>
+                <br/><br/><br/><br/>
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;One has to eventually grow up,Spending a lifetime to taste the love and pain.</span>
+                <br/><br/><br/><br/>
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;Never can we suspend the time,Having to leave the tracks behind,there is a longer way ahead, After all.</span>
+                <br/><br/><br/><br/>
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;“May you, the beauty of this world, always shine.”</span>
+            </h4>
+            <p>
+
+                <input id="check_box" type="checkbox" onclick="check()"/>我已阅读协议内容，并同意协议
+                <br/>
+                <button id="cancel">取消</button>
+                <button id="commit_btn" disabled="disabled">提交</button>
+            </p>
+        </div>
+    </div>
+    <div id="footer" class="container"></div>
+    <script src="{% static 'js/jquery-3.2.0.js' %}"></script>
+    <script src="{% static 'js/header.js' %}"></script>
+    <script src="{% static 'js/footer.js' %}"></script>
+<script>
+    function check() {
+        var ch = document.getElementById("check_box")
+        if(ch.checked == true){
+            document.getElementById("commit_btn").removeAttribute("disabled");
+        }
+        else{
+            document.getElementById("commit_btn").disabled="disabled"
+        }
+    }
+    $('#commit_btn').click(function (){
+        window.location.href = '{% url "message" %}'
+    })
+    $('#cancel').click(function () {
+        window.location.href = '{% url 'index' %}'
+    })
+
+</script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+.container{
+    height: 700px;
+}
+.f2 {
+  box-sizing: border-box;
+    /*top: 40px;*/
+  padding-top: 40px;
+}
+.f2 p {
+  /*display: flex;*/
+  justify-content: space-between;
+  flex-wrap: wrap;
+    padding: 5px;
+  width: 800px;
+  height: 380px;
+    font-size: 25px;
+  /*position: relative;*/
+    margin-top:300px;
+    margin-left: 300px;
+    /*display: inline-block;*/
+  position: absolute;
+  top: 280px;
+}
+
+.f2 p i {
+  color: #3A50AD;
+  margin-left: 280px;
+}
+.f2 p em {
+  position: absolute;
+  top: 60px;
+  /*left: 20px;*/
+  font-size: 25px;
+}
+.f2 p em span {
+  color: red;
+}
+.f2 p s {
+  position: absolute;
+  top: 110px;
+  /*left: 30px;*/
+}
+.f2 p a {
+  display: inline-block;
+  border: 2px dashed #FF6600;
+  padding: 5px 20px;
+  border-radius: 3px;
+  position: absolute;
+  top: 50px;
+  left: 180px;
+    margin-left: 290px;
+}

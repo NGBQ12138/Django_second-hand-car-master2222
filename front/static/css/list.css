@@ -1,0 +1,138 @@
+.f1-left {
+  position: relative;
+}
+.f1-left {
+  /*display: inline-block;*/
+  margin-top: 20px;
+  width: 800px;
+  height: 100px;
+  /*box-sizing: border-box;*/
+  padding: 20px 20px;
+}
+.f1-left b {
+  padding: 10px;
+  font-size: 20px;
+  /*border-bottom: 2px dashed #FF6600;*/
+  background-color: #F2F2F0;
+}
+.f1-left ul {
+  padding-top: 15px;
+
+  /*overflow: hidden;*/
+  width: 80%;
+  margin: 0 auto;
+}
+.f1-left ul li {
+  float: left;
+  padding-right: 10px;
+    margin-left: 25px;
+}
+.f1-left ul li img {
+  width: 32px;
+  height: 32px;
+  padding-right: 10px;
+}
+.f2 {
+  box-sizing: border-box;
+  padding-top: 20px;
+}
+.f2 b {
+  margin: 20px;
+  padding: 10px;
+  font-size: 20px;
+  border-bottom: 2px dashed #FF6600;
+}
+.f2 div {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 30px;
+  flex-wrap: wrap;
+}
+.f2 div div {
+  border: 1px solid #e6e6e5;
+  padding: 5px;
+  width: 260px;
+  height: 380px;
+  position: relative;
+    margin-top:20px;
+}
+.f2 div div img {
+  width: 260px;
+  height: 260px;
+}
+.f2 div div p {
+  display: inline-block;
+  position: absolute;
+  top: 280px;
+}
+.f2 div div p i {
+  color: #3A50AD;
+  margin-left: 70px;
+}
+.f2 div div p em {
+  position: absolute;
+  top: 30px;
+  left: 25px;
+  font-size: 25px;
+}
+.f2 div div p em span {
+  color: red;
+}
+.f2 div div p s {
+  position: absolute;
+  top: 70px;
+  left: 30px;
+}
+.f2 div div p a {
+  display: inline-block;
+  border: 2px dashed #FF6600;
+  padding: 5px 10px;
+  border-radius: 3px;
+  position: absolute;
+  top: 30px;
+  right: 10px;
+}
+
+
+/*轮播CSS*/
+div.sub-banner {
+  width: 1300px;
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+}
+div.sub-banner ul.sub-img {
+  position: absolute;
+  left: 0;
+}
+div.sub-banner ul.sub-img img {
+  width: 1300px;
+  height: 500px;
+}
+div.sub-banner ul.sub-img > li {
+  float: left;
+  width: 1300px;
+}
+div.sub-banner ul.sub-case {
+  position: absolute;
+  right: 500px;
+  bottom: 20px;
+}
+div.sub-banner ul.sub-case li {
+  color: #fff;
+  width: 20px;
+  height: 25px;
+  background: #000;
+  text-align: center;
+  line-height: 25px;
+  border: #000 solid 1px;
+  margin-right: 20px;
+  float: left;
+}
+div.sub-banner ul.sub-case li.sub-active {
+  border: #FF6600 solid 1px;
+  color: #fff;
+}
+
+

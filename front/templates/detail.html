@@ -1,0 +1,35 @@
+{% extends 'index.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title></title>
+    {% block css %}
+    <link rel="stylesheet" href="{% static 'css/base.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/header.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/footer.css' %}"/>
+        <link rel="stylesheet" href="{% static 'css/detail.css' %}">
+    {% endblock %}
+
+</head>
+<body>
+{% block sub-banner %}
+{% endblock %}
+{% block container %}
+    <div class="container">
+        <div style="text-align: center;">
+            <img src="{{ carone.picture.url }}" width="800" height="500" alt="">
+        </div>
+        <div class="f2">
+            <p>
+                <span>{{ carone.serbran }}&nbsp;&nbsp;&nbsp;{{ carone.ctitle }}<i>{{ carone.mileage }}公里/万</i></span><br>
+                <em>价格：<span>{{ carone.extractprice }}</span>万元</em>
+                <s>新车指导价：{{ carone.newprice }}万</s>
+                <a href="{% url 'addorder' %}?carid={{ carone.id }}">我要购买</a>{{ message }}
+            </p>
+        </div>
+    </div>
+{% endblock %}
+</body>
+</html>

@@ -1,0 +1,35 @@
+#header {
+  box-sizing: border-box;
+  height: 80px;
+  background: linear-gradient(to bottom, #f5f4f5, #e6e6e5);
+  position: relative;
+}
+#header img {
+  height: 80px;
+  display: inline-block;
+}
+#header ul {
+  display: inline-block;
+  margin: 0 auto;
+}
+#header ul li {
+  display: inline-block;
+  line-height: 80px;
+  padding-left: 80px;
+  font-weight: bold;
+}
+#header p {
+  display: inline-block;
+  float: right;
+  line-height: 80px;
+  font-size: 23px;
+  color: #3F51B5;
+}
+#header p img {
+  width: 30px;
+  height: 30px;
+}
+#header p b {
+  border-left: 1px solid #000;
+  padding-left: 20px;
+}

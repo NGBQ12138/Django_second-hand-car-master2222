@@ -1,0 +1,23 @@
+.contain {
+  width: 70%;
+  margin: 0 auto;
+}
+.contain h2 {
+  margin: 20px 0;
+  text-align: center;
+}
+.contain span {
+  display: block;
+}
+.contain p {
+  padding-top: 20px;
+  text-align: center;
+}
+.contain p button {
+  margin-top: 20px;
+  width: 80px;
+  height: 30px;
+  background-color: #78C64E;
+  outline: none;
+  border-radius: 5px;
+}
